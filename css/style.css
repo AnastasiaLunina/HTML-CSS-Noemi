@@ -205,12 +205,12 @@ div.hidden {
     width: 100%;
     position: relative;
     z-index: 0;
-    /* padding-top: 1.7%; */
+    padding-top: 30px;
     /* 30px */
-    /* padding-bottom: 7.3%; */
+    padding-bottom: 125px;
     /* 125px */
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
   }
 
   .header-content:after {
@@ -713,11 +713,107 @@ div.hidden {
   /* Side section ends */
 
   /* Store section */
+  .store-section-container {
+    margin-top: 65px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+  }
+  
+  .store-main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 23px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .store-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .store-card-info {
+    width: 300px;
+    margin-top: -10px;
+    padding-top: 30px;
+    outline: 3px solid #b59f5b;
+    background-color: rgba(0,0,0,0);
+    outline-offset: 20px;
+    flex: 1;
+  }
+  
+  .store-card-title {
+    font-size: 20px;
+    line-height: 24px;
+    color: #0f0d0e;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  .store-card-par {
+    margin-top: 2px;
+    font-size: 15px;
+    line-height: 22px;
+    color: #0f0d0e;
+    font-weight: 400;
+    }
 
+  .store-link {
+    color: #b59f5b;
+    text-decoration: none;
+  }
+  
+  .store-link:hover {
+    text-decoration: underline;
+  }
+  
+  .store-price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 24px;
+    position: relative;
+  }
+  
+  .sale-price {
+    font-size: 20px;
+    line-height: 24px;
+    color: #0f0d0e;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  
+  .full-price {
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: line-through;
+    color: #0f0d0e;
+    font-weight: 700;
+  }
+  
+  .store-button {
+    width: 140px;
+    height: 48px;
+    display: inline-block;
+    margin-top: 20px;
+    border: none;
+    background-color: #b59f5b;
+    color: #ffffff;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 400px;
+    cursor: pointer;
+  }
   /* Store section ends */
 
 
-  
+
   /* Footer */
 
   /* Footer ends */
