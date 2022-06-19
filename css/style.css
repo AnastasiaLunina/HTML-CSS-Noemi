@@ -18,11 +18,7 @@
     font-style: normal;
   }
 
-/* .popup {
-    font-family: OpenSans, sans-serif;
-    color: #0f0d0e;
-} */
-
+/* Hide elements */
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -35,9 +31,7 @@
   }
 
 /* Popup */
-
 /* Comment div.hidden below to see the popup */
-
 div.hidden {
     display: none;
   }
@@ -114,7 +108,7 @@ div.hidden {
     width: 1px;
     height: 1px;
     clip: rect(1px, 1px, 1px, 1px);
-  }
+}
   
   .radio-text:before {
    content: "";
@@ -162,7 +156,6 @@ div.hidden {
   textarea.field {
     min-height: 133px;
     width: 100%;
-    /* max-width: 100%; */
     padding: 17px;
     background-color: #f4f7f6;
     border: none;
@@ -187,6 +180,7 @@ div.hidden {
     height: 49px;
     background-color: #b59f5b;
     border: none;
+    cursor: pointer; 
   }
 
   .feedback-button:hover {
@@ -205,9 +199,9 @@ div.hidden {
     width: 100%;
     position: relative;
     z-index: 0;
-    padding-top: 30px;
+    /* padding-top: 30px; */
     /* 30px */
-    padding-bottom: 125px;
+    /* padding-bottom: 125px; */
     /* 125px */
     /* display: flex; */
     /* justify-content: center; */
@@ -233,9 +227,16 @@ div.hidden {
     width: 180px;
 }
 
+.header-title-container {
+    height: 73vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .header-title {
     margin-top: 4%;
-    align-self: center;
     text-transform: uppercase;
     font-size: 45px;
     line-height: 75px;
