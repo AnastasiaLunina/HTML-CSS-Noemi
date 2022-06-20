@@ -195,16 +195,10 @@ div.hidden {
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
-    height: 73vh;
-    width: 100%;
+    /* height: 73vh;
+    width: 100vw; */
     position: relative;
     z-index: 0;
-    /* padding-top: 30px; */
-    /* 30px */
-    /* padding-bottom: 125px; */
-    /* 125px */
-    /* display: flex; */
-    /* justify-content: center; */
   }
 
   .header-content:after {
@@ -220,16 +214,14 @@ div.hidden {
 
   .header-logo {
     position: absolute;
-    left: 14.6%; 
-    /* 250px */
-    top: 8.1%;
-    /* 37px */
+    left: 250px; 
+    top: 37px;
     width: 180px;
 }
 
 .header-title-container {
     height: 73vh;
-    width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -248,19 +240,9 @@ div.hidden {
 /* Navigation */
 .nav-container {
     position: absolute;
-    right: 14.4%;
-    /* 245px */
-    top: 10%;
-    /* 45px */
+    right: 245px;
+    top: 45px;
 }
-
-  /* .header-container {
-    display: flex;
-    height: 73vh;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}  */
 
 .nav-list {
     display: flex;
@@ -816,5 +798,66 @@ div.hidden {
 
 
   /* Footer */
-
+  .footer {
+    max-width: 1200px;
+    margin: 94px auto 0 auto;
+    padding: 0 15px 20px;
+    height: 82px;
+  }
+  
+  .footer-content {
+    background-color: #f4f7f6;
+    padding: 30px 0;
+  }
+  
+  .social-icon-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-icon-item {
+    min-width: 20px;
+    height: 20px;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .social-icon-item:nth-child(n+2){
+    margin-left: 30px;
+  }
+  
+  .twitter {
+    background-image: url("../svg/004-twitter.svg");
+  }
+  
+  .pinterest {
+    background-image: url("../svg/001-pinterest.svg");
+  }
+  
+  .facebook {
+    background-image: url("../svg/002-facebook-logo.svg");
+  }
+  
+  .instagram {
+    background-image: url("../svg/005-instagram.svg");
+  }
+  
+  .tumblr {
+    background-image: url("../svg/003-tumblr.svg");
+  }
+  
+  .copyright {
+    max-width: 1200px;
+    text-align: center;
+    margin-top: 70px;
+  }
+  
+  .copyright-link {
+    color: #999999;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 40px;
+    color: #999999;
+    font-weight: 700;
+  }
   /* Footer ends */
