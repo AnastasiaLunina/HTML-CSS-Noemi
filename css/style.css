@@ -1001,8 +1001,15 @@ textarea.field:focus {
         margin-right: 23px;
    }
     .posts-container {
+        flex-direction: column-reverse;
+        max-width: 100%;
         margin-top: 650px;
    }
+
+   .post {
+       width: 100%;
+   }
+   
     .post-img {
         min-width: 0;
    }
