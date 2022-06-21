@@ -935,13 +935,16 @@ div.hidden {
   @media (min-width: 641px) and (max-width: 1199px) {
     .header {
         padding-top: 0;
-        background-image: url("../images/banner-bg-tablet.jpg");
     }
   
     .logo {
       width: 158px;
       margin-left: 0;
     }
+
+    .header-content {
+        background-image: url("../images/banner-bg-tablet.jpg");
+      }
   
     .header-title {
         font-size: 40px;
@@ -1125,3 +1128,178 @@ div.hidden {
   }
 }
 
+/* Phone */
+  @media (max-width: 640px) {
+  /* popup */
+    .feedback-form {
+      padding: 27px 24px 32px;
+    }
+  
+    .close-button {
+      top: -32px;
+    }
+  
+    textarea.field {
+    resize: none;
+    }
+  
+    .visually-hidden {
+      display: none;
+    }
+  
+    .popup-container {
+      margin: 0 15px;
+    }
+  
+    .header-content, .main-wrapper, .footer, .trend-card-container {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  
+    .logo {
+      /* width: 270px; */
+      margin: 175px 0 28px 0;
+    }
+
+    .header-content {
+        background-image: url("../images/banner-mobile.jpg");
+        background-size: cover;
+        background-position: right 35% bottom 15%;
+      }
+  
+    .header-title-container {
+      padding: 0 30px;
+      margin-top: 0;
+  
+    }
+  
+    .header-title {
+      font-size: 26px;
+      line-height: 1.4;
+    }
+  
+    .trend-section-container {
+      margin-top: 40px;
+    }
+  
+    .main-section {
+      width: 100%;
+    }
+  
+    .main-section-title {
+      font-size: 16px;
+    }
+  
+    .trends, .main-section, .post, .store {
+      flex-direction: column;
+    }
+  
+    .trend-card-container {
+      width: 100%;
+      min-height: 232px;
+      margin-top: 3px;
+    }
+
+    .mobile-underline {
+        display: block;
+        height: 3px;
+        background-color: #eeeeee;
+        margin-top: 22px;
+        border: none;
+    }
+  
+    .trend-card {
+      padding: 26px 20px;
+    }
+  
+    .trend-title {
+      margin-top: 9px;
+      font-size: 16px;
+      line-height: 1.25;
+    }
+  
+    .main-section {
+      margin-top: 45px;
+      margin-right: 23px;
+    }
+
+    .posts-container {
+        margin-top: 650px;
+    }
+  
+    .post-img {
+      min-width: 0;
+    }
+  
+    .post-title {
+      font-size: 16px;
+      line-height: 1.25;
+      margin-top: 8px;
+    }
+  
+    .post-content {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  
+    .post-timestamp {
+      margin-top: 12px;
+    }
+  
+    .post-text {
+      margin-top: 15px;
+      margin-bottom: 20px;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  
+    .post:nth-child(n+2) {
+      margin-top: 35px;
+    }
+  
+    .side-menu {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 39px;
+    }
+  
+    .section-title {
+      font-size: 16px;
+    }
+  
+    .side-menu-section:nth-child(n+2) {
+      margin-top: 40px;
+    }
+  
+    .store-main-container {
+      margin-top: 30px;
+    }
+  
+    .store-section-container {
+      margin-top: 30px;
+    }
+  
+    .store-card-container {
+      align-items: center;
+      margin-bottom: 55px;
+    }
+  
+    .store-card-info {
+      width: 100%;
+      margin-top: -12px;
+      padding-top: 25px;
+      max-width: 290px;
+    }
+  
+    .store-card-title {
+      font-size: 17px;
+    }
+  
+    .footer {
+      margin-top: 15px;
+    }
+  
+    .copyright {
+      margin: 45px auto 45px;
+    }
+  }
