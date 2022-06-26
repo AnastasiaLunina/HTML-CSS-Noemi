@@ -144,6 +144,7 @@ textarea.field {
     font-size: 13px;
     color: #000000;
     outline: none;
+    resize: none;
 }
 textarea.field:focus {
     border: 1px solid #b59f5b;
@@ -256,13 +257,13 @@ textarea.field:focus {
     color: #0f0d0e;
     font-weight: 700;
 }
-.trend-section-underline {
+.trend-section-underline:after {
+    display: block;
+    content: "";
     width: 66px;
     height: 3px;
+    margin: 14px auto 28px auto;
     background-color: #b59f5b;
-    margin-bottom: 28px;
-    margin-top: 14px;
-    border: none;
 }
 .trends {
     display: flex;
@@ -323,12 +324,13 @@ textarea.field:focus {
 .trend-title-link:hover {
     color: #b59f5b;
 }
-.trend-list {
+.trend-list, .post-list {
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
 }
-.trend-list-item:nth-child(n+2) {
-    margin-left: 18px;
+.trend-list-item:nth-child(n+1) {
+    margin-right: 18px;
 }
 .trend-list-link, .post-list-link {
     text-decoration: none;
@@ -362,15 +364,15 @@ textarea.field:focus {
 .post-content {
     margin-left: 33px;
 }
-.post-list {
+/* .post-list {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
     font-size: 14px;
     font-weight: 700;
-}
-.post-list-item:nth-child(n+2) {
-    margin-left: 18px;
+} */
+.post-list-item:nth-child(n+1) {
+    margin-right: 18px;
 }
 .post-img {
     min-width: 380px;
