@@ -167,6 +167,11 @@ textarea.field:focus {
 }
 /* Popup End*/
 /* Header */
+.header-container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
 .header-content {
     background-color: #000000;
     background-image: url("../images/banner-bg.jpg");
