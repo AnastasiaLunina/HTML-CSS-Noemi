@@ -192,11 +192,15 @@ textarea.field:focus {
     background-color: rgba(0, 0,0, 0.6);
     z-index: -1;
 }
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+}
 .header-logo {
-    position: absolute;
     left: 250px;
     top: 37px;
     width: 180px;
+    margin-top: 36px;
 }
 .header-title-container {
     height: 73vh;
@@ -219,9 +223,9 @@ textarea.field:focus {
     display: none;
 }
 .nav-container {
-    position: absolute;
     right: 245px;
     top: 45px;
+    margin-top: 36px;
 }
 .nav-list {
     display: flex;
